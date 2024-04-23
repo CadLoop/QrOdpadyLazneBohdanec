@@ -130,7 +130,7 @@
 			var iban = generateIBAN(account, bankCode);
 
 			variableSymbols.forEach(function (vs) {
-				var qrData = `SPD*1.0*ACC:${iban}*AM:${amount}*CC:CZK*X-VS:${vs.trim()}*X-SS:${specificSymbol}*MSG:Platba za odpady QR udělátkem`;
+				var qrData = `SPD*1.0*ACC:${iban}*AM:${amount}*CC:CZK*X-VS:${vs.trim()}*X-SS:${specificSymbol}*MSG:Platba za odpady QR udelatkem`;
 				var div = document.createElement("div");
 				div.className = "qr-code";
 				canvas.appendChild(div);
